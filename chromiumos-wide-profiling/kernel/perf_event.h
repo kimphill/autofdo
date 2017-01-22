@@ -862,6 +862,7 @@ enum perf_event_type {
 	 */
 	PERF_RECORD_SWITCH_CPU_WIDE		= 15,
 
+	PERF_RECORD_FINISHED_ROUND		= 68,
 	PERF_RECORD_MAX,			/* non-ABI */
 };
 
