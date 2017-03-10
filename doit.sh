@@ -15,9 +15,9 @@
 # $ git describe ba11ba65e02836c475427ae199adfc2d8cc4a900
 # v4.3-rc3-179-gba11ba6
 
-export PERF=$HOME/git/linux-perf-acme/tools/perf/perf
-#export TARGET=sort
-export TARGET=$HOME/git/RichardBarrell-snippets/rev26
+export PERF=$HOME/git/linux-perf-tip-mingo/tools/perf/perf
+export TARGET=./sort
+#export TARGET=$HOME/git/RichardBarrell-snippets/rev26
 gcc -g -O3 ${TARGET}.c -o ${TARGET}_O3 -lpthread -Wall -DUSE_A_SPIN_BARRIER
 time ${TARGET}_O3 
 echo "[intel-pt]" > ~/.perfconfig
